@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="">
+    <title>@nicholasteslaaa - 71231021 - Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <p>welcome to my personal web page</p>
+    </header>
+    <section id="gambar">
+        <h1>About Me</h1>
+        <img src="WIN_20231129_17_42_40_Pro.jpg" width="360" height="280">
+            
+    </section>
+    <section id="tentang-saya">
+        <h1>Christian Nicholas Saputra</h1>
+        <p>instagram: @nicholasteslaaa</p>
+        <p><b>jogja, Indonesia</b></p>
+        <p><b>Duta Wacana University</b></p>
+
+        
+    </section>
+    <section id="keterampilan">
+        <p>
+        <h1>Skill Set</h1>
+        <ol>
+            <li>Python</li>
+            <li>C</li>
+            <li>Html</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            
+        </ol>
+    </p>
+    </section>
+    
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.createElement("button");
+        tombolGantiWarna.textContent = "tombolGantiWarna";
+        tombolGantiWarna.addEventListener("click", gantiWarnaRandom);
+
+        document.body.appendChild(tombolGantiWarna);
+    </script>
+
+
+    <footer class="footer">
+        <p>Thank you for visiting my personal Web</p>
+    </footer>
+
+</body>
+</html>
